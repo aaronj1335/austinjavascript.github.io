@@ -1,0 +1,47 @@
+---
+layout: default
+noindex: true
+wide: true
+extra_css:
+- /css/welcome.css
+---
+
+<div class=are-you-kidding-this-isnt-classy>
+  <h2 class="text-center breathing-room">
+    <span class="inline-block ajs-box">
+      W e l c o m e <span class=tweak-moji>&#128079;</span>
+    </span>
+  </h2>
+
+  <h2 class="in-your-face breathing-room">
+    <a href="/austinjs-code-of-conduct/">
+      Code of<br>Conduct<br>
+      <span class=not-upcase>austinjavascript.com/CoC</span>
+    </a>
+  </h2>
+</div>
+
+<div class="breathing-room text-center">
+  <div class=inline-block>
+    <div class="have-an-issue text-right">
+      Have an issue?<br>
+      Reach out to an organizer.<br>
+      We'll take care of it.
+    </div>
+
+    {% for person in site.people.organizers %}
+      <div class="ajs-box media-object person">
+        <img alt="{{ person[1].full }}" src="{{ person[1].avi }}" />
+
+        <div>
+          {{ person[1].full }} <br />
+          <a href="https://twitter.com/{{ person[1].twitter }}">
+            @{{ person[1].twitter }}
+          </a>
+          <br/>
+          {{ person[1].phone }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

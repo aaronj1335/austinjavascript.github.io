@@ -1,0 +1,62 @@
+---
+---
+
+.are-you-kidding-this-isnt-classy {
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 4rem;
+  line-height: 4.7rem;
+}
+
+.in-your-face {
+  margin-top: 0;
+
+  a {
+    color: black;
+    text-decoration: none;
+
+    .not-upcase {
+      text-transform: none;
+    }
+  }
+}
+
+.right {
+  float: right;
+}
+
+.not-mono {
+  font-family: sans-serif;
+}
+
+.tweak-moji {
+  font-size: 0.8em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.breathing-room {
+  margin: 2rem 0;
+}
+
+.people, .have-an-issue {
+  display: inline-block;
+}
+
+.have-an-issue {
+  vertical-align: bottom;
+  padding-bottom: 1.4em;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-family: monospace;
+}

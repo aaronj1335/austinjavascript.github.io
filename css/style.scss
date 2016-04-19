@@ -15,8 +15,11 @@ html {
 }
 
 main {
-  margin: auto;
   padding: $gutter-md;
+}
+
+.centered-page {
+  margin: auto;
   max-width: 800px;
 }
 

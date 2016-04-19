@@ -10,6 +10,9 @@
     <meta name=description content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel=stylesheet href=/css/style.css>
+    {% for stylesheet in page.extra_css %}
+      <link rel=stylesheet href="{{ stylesheet }}">
+    {% endfor %}
     <link rel=canonical href="{{ page.url }}">
     <link rel=alternate type=application/atom+xml title="{{ site.title }}" href="{{ "/feed.xml" }}" />
 
@@ -27,7 +30,7 @@
       </h1>
     </header>
 
-    <main role=main>
+    <main role=main class="{% unless page.wide %}centered-page{% endunless %}">
       {{ content }}
     </main>
 
