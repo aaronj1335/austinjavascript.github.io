@@ -1,0 +1,12 @@
+{
+  "name": "austinjavascript",
+  "version": "1.0.0",
+  "description": "austinjavascript.com site",
+  "main": ".eleventy.js",
+  "repository": "git@github.com:austinjavascript/austinjavascript.github.io.git",
+  "author": "Aaron Stacy <aaron.r.stacy@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.8.3"
+  }
+}
