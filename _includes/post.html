@@ -5,7 +5,7 @@ layout: default
   <header>
     <h2>
       <a href="{{ page.url }}">
-        {{ page.title }}
+        {{ title }}
       </a>
     </h2>
   </header>
@@ -16,7 +16,7 @@ layout: default
 <footer>
   Posted on
   <time datetime={{ page.date | date: "%Y-%m-%d" }}>
-    {{ page.date | date: "%b %-d, %Y" }}
+    {{ page.date | date: "%b %d, %Y" }}
   </time>
   by {% include byline.html %}
 </footer>
